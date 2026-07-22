@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Михаил | Авитолог</title>
+  <meta name="description" content="Свяжитесь с авитологом Михаилом. Бесплатный аудит профиля на Авито.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Основная навигация">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Михаил<span>.авито</span></a>
+      <div class="nav__links" id="navLinks">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="services.html" class="nav__link">Услуги</a>
+        <a href="niches.html" class="nav__link">Направления</a>
+        <a href="results.html" class="nav__link">Результаты</a>
+        <a href="contact.html" class="nav__cta nav__link--active">Обсудить проект</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__breadcrumb">
+        <a href="index.html">Главная</a> / Контакты
+      </div>
+      <h1>Свяжитесь со мной</h1>
+      <p>Бесплатный аудит профиля на Авито. Без обещаний — только цифры и план.</p>
+    </div>
+  </header>
+
+  <!-- Contact -->
+  <section class="section">
+    <div class="container">
+      <div class="detail-grid">
+        <div>
+          <h2>Как мы работаем</h2>
+          <p style="font-size: var(--text-lg); color: var(--n-600); margin-bottom: var(--space-8);">
+            Заполните форму или напишите напрямую. Отвечаю в течение часа в рабочее время.
+          </p>
+          <div class="detail-list">
+            <div class="detail-list__item">
+              <div class="detail-list__check">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="detail-list__text">
+                <h4>1. Бесплатный аудит</h4>
+                <p>Изучаю ваш профиль и конкурентов. Готовлю отчёт с выводами и рекомендациями. Бесплатно, без обязательств.</p>
+              </div>
+            </div>
+            <div class="detail-list__item">
+              <div class="detail-list__check">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="detail-list__text">
+                <h4>2. Обсуждение</h4>
+                <p>Разбираем аудит вместе. Отвечаю на вопросы. Предлагаю варианты сотрудничества.</p>
+              </div>
+            </div>
+            <div class="detail-list__item">
+              <div class="detail-list__check">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="detail-list__text">
+                <h4>3. Запуск</h4>
+                <p>Начинаем работу. Первые результаты — через 1-2 недели после упаковки профиля.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--space-8); padding: var(--space-6); background: var(--n-100); border-radius: var(--radius-lg);">
+            <h4 style="margin-bottom: var(--space-3);">Прямые контакты</h4>
+            <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+              <a href="https://t.me/mihailavi" style="color: var(--accent); font-weight: 500;">Telegram: @mihailavi</a>
+              <a href="https://wa.me/79001234567" style="color: var(--accent); font-weight: 500;">WhatsApp: +7 (900) 123-45-67</a>
+              <span style="color: var(--n-600);">Время ответа: до 1 часа</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <form class="contact-form" id="contactForm" style="background: white; padding: var(--space-8); border: 1px solid var(--n-200); border-radius: var(--radius-lg);">
+            <h3 style="margin-bottom: var(--space-6);">Заказать аудит</h3>
+            <div class="form-group">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" name="name" placeholder="Как к вам обращаться" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон или Telegram</label>
+              <input type="text" id="phone" name="phone" placeholder="+7 (900) 123-45-67 или @username" required>
+            </div>
+            <div class="form-group">
+              <label for="niche">Ваша ниша</label>
+              <select id="niche" name="niche">
+                <option value="">Выберите направление</option>
+                <option value="construction">Строительство и ремонт</option>
+                <option value="business">Услуги для бизнеса</option>
+                <option value="beauty">Красота и здоровье</option>
+                <option value="education">Обучение и репетиторы</option>
+                <option value="legal">Юридические услуги</option>
+                <option value="logistics">Грузоперевозки</option>
+                <option value="cleaning">Клининг и уборка</option>
+                <option value="repair">Ремонт техники</option>
+                <option value="photo">Фото и видео</option>
+                <option value="events">Праздники и мероприятия</option>
+                <option value="auto">Авто-услуги</option>
+                <option value="it">IT и разработка</option>
+                <option value="other">Другое</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Сообщение</label>
+              <textarea id="message" name="message" placeholder="Расскажите о вашем бизнесе и задаче. Что сейчас работает, что нет?"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center;">
+              Получить аудит бесплатно
+            </button>
+            <p style="font-size: var(--text-xs); color: var(--n-500); margin-top: var(--space-3); text-align: center;">
+              Отвечаю в течение 1 часа. Без спама и рассылок.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--alt">
+    <div class="container" style="max-width: 720px;">
+      <div class="section-header section-header--center">
+        <span class="section-header__eyebrow">Вопросы</span>
+        <h2>Частые вопросы</h2>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__question">
+          Бесплатный аудит — правда бесплатно?
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-item__answer">
+          <p>Да. Аудит — это мой способ показать, что я могу помочь. Вы получаете отчёт с конкретными рекомендациями. Даже если не станете работать со мной — отчёт вам полезен.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__question">
+          Как быстро вы отвечаете?
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-item__answer">
+          <p>В рабочее время (9:00-19:00 МСК) — в течение часа. В выходные — до 3 часов. Если задержка — предупрежу.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__question">
+          Можно ли работать удалённо?
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-item__answer">
+          <p>Да, работаю с клиентами по всей России. Все коммуникации — в мессенджерах. Авито не привязан к городу.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__copy">&copy; 2026 Михаил — Авитолог</span>
+        <div class="footer__links">
+          <a href="services.html" class="footer__link">Услуги</a>
+          <a href="niches.html" class="footer__link">Направления</a>
+          <a href="contact.html" class="footer__link">Контакты</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
