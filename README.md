@@ -29,3 +29,5 @@ python -m http.server 8790
 GitHub Pages публикует ветку `main` из корня репозитория:
 
 https://mixailalecseevich-glitch.github.io/mihailavi-ru/
+
+Короткая ссылка для публикаций и сообщества: https://clck.ru/3VwhTU

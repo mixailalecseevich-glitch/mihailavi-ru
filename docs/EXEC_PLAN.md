@@ -29,8 +29,8 @@ Verification: Playwright screenshots and browser checks pass at representative w
 ## Milestone 4: Release
 
 - [x] Review the diff and scan for secrets or unsupported claims.
-- [ ] Commit and push to `main`.
-- [ ] Wait for GitHub Pages deployment.
-- [ ] Verify the production URL.
+- [x] Commit and push to `main`.
+- [x] Wait for GitHub Pages deployment.
+- [x] Verify the production URL.
 
 Definition of done: the public page reflects the new website and the contact buttons open VK and Telegram.
