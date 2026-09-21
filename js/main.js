@@ -2,8 +2,32 @@ document.addEventListener("DOMContentLoaded",()=>{
   const button=document.querySelector("[data-menu-button]");
   const menu=document.querySelector("[data-menu]");
   const year=document.querySelector("[data-year]");
+  const cookieBanner=document.querySelector("[data-cookie-banner]");
+  const cookieAccept=document.querySelector("[data-cookie-accept]");
+  const cookieReject=document.querySelector("[data-cookie-reject]");
+  const cookieSettings=document.querySelector("[data-cookie-settings]");
+  const cookieStorageKey="mihail-cookie-choice";
 
   if(year){year.textContent=String(new Date().getFullYear())}
+
+  const readCookieChoice=()=>{
+    try{return window.localStorage.getItem(cookieStorageKey)}catch{return null}
+  };
+
+  const saveCookieChoice=choice=>{
+    try{window.localStorage.setItem(cookieStorageKey,choice)}catch{}
+    if(cookieBanner){cookieBanner.hidden=true}
+  };
+
+  if(cookieBanner){
+    cookieBanner.hidden=readCookieChoice()!==null;
+    cookieAccept?.addEventListener("click",()=>saveCookieChoice("accepted"));
+    cookieReject?.addEventListener("click",()=>saveCookieChoice("rejected"));
+    cookieSettings?.addEventListener("click",()=>{
+      cookieBanner.hidden=false;
+      cookieReject?.focus();
+    });
+  }
 
   if(!button||!menu){return}
 
