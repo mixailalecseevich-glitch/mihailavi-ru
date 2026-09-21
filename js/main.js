@@ -6,9 +6,6 @@ document.addEventListener("DOMContentLoaded",()=>{
   const cookieAccept=document.querySelector("[data-cookie-accept]");
   const cookieReject=document.querySelector("[data-cookie-reject]");
   const cookieSettings=document.querySelector("[data-cookie-settings]");
-  const telegramCopy=document.querySelector("[data-copy-telegram]");
-  const telegramCopyLabel=document.querySelector("[data-copy-label]");
-  const telegramCopyStatus=document.querySelector("[data-copy-status]");
   const cookieStorageKey="mihail-cookie-choice";
 
   if(year){year.textContent=String(new Date().getFullYear())}
@@ -29,27 +26,6 @@ document.addEventListener("DOMContentLoaded",()=>{
     cookieSettings?.addEventListener("click",()=>{
       cookieBanner.hidden=false;
       cookieReject?.focus();
-    });
-  }
-
-  if(telegramCopy){
-    telegramCopy.addEventListener("click",async()=>{
-      const contact="@Mixail_AVITO";
-      try{
-        await navigator.clipboard.writeText(contact);
-      }catch{
-        const field=document.createElement("textarea");
-        field.value=contact;
-        field.setAttribute("readonly","");
-        field.style.position="fixed";
-        field.style.opacity="0";
-        document.body.append(field);
-        field.select();
-        document.execCommand("copy");
-        field.remove();
-      }
-      if(telegramCopyLabel){telegramCopyLabel.textContent="Скопировано"}
-      if(telegramCopyStatus){telegramCopyStatus.hidden=false}
     });
   }
 
