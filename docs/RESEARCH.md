@@ -29,6 +29,6 @@ Keep the existing static architecture and GitHub Pages deployment. A framework m
 No form and no phone number. Use direct messenger links only:
 
 - VK messages: `https://vk.me/mixail_avito`
-- Telegram: `https://t.me/mihailavi`
+- Telegram: `https://t.me/Mixail_AVITO`
 
 The Telegram username comes from the existing repository. It should be confirmed by the owner if it has changed.
