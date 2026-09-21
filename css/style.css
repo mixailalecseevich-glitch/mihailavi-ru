@@ -104,7 +104,7 @@ p,h1,h2,h3,figure{margin:0}
 
 .section{padding:clamp(90px,10vw,140px) 0;border-bottom:1px solid var(--line)}
 .section-heading{max-width:840px;margin-bottom:60px}
-.section-heading h2,.about-copy h2,.contact h2{font-size:clamp(40px,5.2vw,68px);line-height:1.02;letter-spacing:-.055em}
+.section-heading h2,.section-heading h3,.about-copy h2,.contact h2{font-size:clamp(40px,5.2vw,68px);line-height:1.02;letter-spacing:-.055em}
 .section-heading>p:last-child{max-width:650px;margin-top:22px;color:var(--muted);font-size:18px}
 
 .service-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px}
@@ -127,7 +127,16 @@ p,h1,h2,h3,figure{margin:0}
 .service-card-photo p{color:#cbd0d6}
 .service-card-outline{background:transparent}
 
-.case-intro{margin-bottom:54px}
+.case-overview{max-width:930px;margin-bottom:92px}
+.case-overview h2{max-width:900px}
+.project-case{position:relative}
+.project-case+.project-case{margin-top:clamp(108px,13vw,176px);padding-top:clamp(82px,9vw,118px);border-top:1px solid var(--line)}
+.project-case+.project-case::before{content:"02";position:absolute;right:0;top:clamp(48px,6vw,78px);color:var(--surface-strong);font-size:clamp(92px,15vw,188px);font-weight:800;line-height:.8;letter-spacing:-.08em;pointer-events:none}
+.case-intro{position:relative;z-index:1;margin-bottom:54px}
+.case-intro h3{max-width:900px}
+.case-label{margin-bottom:18px;color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.case-meta{display:flex;flex-wrap:wrap;gap:9px;margin:-30px 0 42px}
+.case-meta span{padding:8px 12px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:12px;font-weight:700}
 .case-story{display:grid;grid-template-columns:1fr 1fr;margin-bottom:50px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .case-state{display:grid;grid-template-columns:90px 1fr;gap:22px;padding:30px 42px 34px 0}
 .case-state-result{padding-left:42px;border-left:1px solid var(--line)}
@@ -139,6 +148,8 @@ p,h1,h2,h3,figure{margin:0}
 .case-gallery figcaption{padding:14px 16px;color:var(--muted);font-size:13px}
 .case-side-shots{display:grid;gap:16px}
 .case-side-shots figure:last-child img{aspect-ratio:1.9/1}
+.case-main-shot-stats img{aspect-ratio:1.72/1;object-fit:contain;background:#fff}
+.case-photo-shot img{object-position:center 45%}
 .case-facts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:48px;border-top:1px solid var(--line)}
 .case-facts p{display:grid;gap:8px;padding:28px 28px 0;border-right:1px solid var(--line)}
 .case-facts p:first-child{padding-left:0}
@@ -210,11 +221,15 @@ p,h1,h2,h3,figure{margin:0}
   .proof-grid p:last-child{border-bottom:0}
   .section{padding:76px 0}
   .section-heading{margin-bottom:40px}
-  .section-heading h2,.about-copy h2,.contact h2{font-size:clamp(37px,10.5vw,52px)}
+  .section-heading h2,.section-heading h3,.about-copy h2,.contact h2{font-size:clamp(37px,10.5vw,52px)}
   .section-heading>p:last-child{font-size:16px}
   .service-grid{grid-template-columns:1fr}
   .service-card,.service-card:nth-child(n){grid-column:1;min-height:250px;padding:24px}
   .case-story{grid-template-columns:1fr}
+  .case-overview{margin-bottom:68px}
+  .project-case+.project-case{margin-top:94px;padding-top:72px}
+  .project-case+.project-case::before{top:46px;font-size:92px}
+  .case-meta{margin:-20px 0 32px}
   .case-state,.case-state-result{grid-template-columns:66px 1fr;padding:22px 0}
   .case-state-result{border-left:0;border-top:1px solid var(--line)}
   .case-side-shots{grid-template-columns:1fr}
