@@ -34,13 +34,11 @@ document.addEventListener("DOMContentLoaded",()=>{
   const closeMenu=()=>{
     button.setAttribute("aria-expanded","false");
     menu.classList.remove("is-open");
-    document.body.classList.remove("menu-open");
   };
 
   const openMenu=()=>{
     button.setAttribute("aria-expanded","true");
     menu.classList.add("is-open");
-    document.body.classList.add("menu-open");
   };
 
   button.addEventListener("click",()=>{
